@@ -105,15 +105,11 @@
     
     .content #picture {
         background-color: white;
-        width:60%;
-        height:100%;
-        align-items: center;
-        align-content: center;
-
+        width: 100%;
     }
 
     #intro{
-        overflow: visible;
+        overflow:visible;
     }
 
     #intro h1{

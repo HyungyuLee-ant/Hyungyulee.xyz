@@ -6,7 +6,7 @@
     background-color: white;
     display: grid;
     width: 100%;
-    height: calc(100vh - 260px);
+    height: calc(100vh - 240px);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 1.5px;
@@ -83,7 +83,7 @@
 }
 
 #fancyMainSlogan{
-    font-weight: 700;
+    font-weight: bold;
     background: -webkit-linear-gradient(#fbcac9, #8ca6ce);
     -webkit-background-clip: text;
     background-clip: text;
@@ -131,6 +131,7 @@
 
         line-height: 10vw;
         font-size: min(8vw, 240px);
+        height:100%;
     }
     .content #main-content-works {
         padding: 24px;
@@ -145,4 +146,13 @@
         grid-template-columns: 1fr;
     }
 
+    .content .main-headline-plain{
+        padding: 0;
+        font-size: 13px;
+    }
+
+    .content .main-headline * {
+        padding: 0;
+        font-size: 13px;
+    }
 }
