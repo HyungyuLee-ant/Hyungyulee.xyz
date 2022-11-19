@@ -107,6 +107,9 @@
 }
 
 @media(max-width: 600px) {
+    .description{
+        overflow: visible;
+    }
     .content{
         display: flex;
         flex-direction: column;

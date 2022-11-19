@@ -144,4 +144,14 @@
     #intro h4 span {
     font-size: 12px;
     }
+
+
+    #intro {
+    height: auto;
+    background-color: white;
+    padding: 12px;
+    overflow: visible;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
 }
