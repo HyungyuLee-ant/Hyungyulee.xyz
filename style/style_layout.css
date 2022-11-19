@@ -144,6 +144,10 @@ body * {
 
 /*footer - responsive*/
 @media(max-width: 600px) {
+
+    .container{
+        padding: 12px;
+    }
     .footer {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 6vh 3vh 0vh;

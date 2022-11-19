@@ -26,7 +26,7 @@
 }
 
 .title{
-     outline: 3px solid red;
+    outline: 3px solid red;
     background-color: white;
     padding: 12px;
 }
@@ -54,10 +54,10 @@
 .description{
     display:flex;
     flex-direction: column;
+    overflow: scroll;
     background-color: white;
     outline: 3px solid red;
     padding: 12px;
-    height:2000px;
 }
 
 .description h1{
@@ -83,8 +83,14 @@
 
 .description .files{
     margin-top: 12px;
-    background-color: white;
-    height: 360px;
+    margin-bottom: 12px;
+}
+
+.description h5{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: calc(12+1vw);
 }
 
 
