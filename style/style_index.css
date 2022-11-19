@@ -117,20 +117,29 @@
 /* content - responsive */
 @media(max-width: 600px) {
     .content{
+        height: calc(100vw-260px);
         grid-template-columns: 100%;
-        grid-template-rows: 33.33% 33.33% 33.33%;
+        grid-template-rows: repeat(3,1fr);
     }
+
     .content #about{
-        grid-row: 1/1;
-        line-height: 50vw;
+        padding: 24px;
+        grid-row: 1/2;
+
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        line-height: 10vw;
         font-size: min(8vw, 240px);
     }
     .content #main-content-works {
+        padding: 24px;
         display: grid;
         grid-template-rows: 2fr 2fr;
         grid-template-columns: 1fr;
     }
     .content #main-content-projects {
+        padding: 24px;
         display: grid;
         grid-template-rows: 2fr 2fr;
         grid-template-columns: 1fr;

@@ -94,11 +94,11 @@ body * {
 @media(max-width: 600px){
     .header{
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 9vh 5vh 0vh;
-        height: 15vh;
+        grid-template-rows: 7vh 5vh 0vh;
+        height: 12vh;
     }
     .header #home{
-        font-size: 18pt;
+        font-size: 260px;
         grid-row: 1/1;
         grid-column: 1/4;
     }

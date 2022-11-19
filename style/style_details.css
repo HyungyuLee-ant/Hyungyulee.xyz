@@ -38,32 +38,36 @@
 
 .title h2 {
     font-weight: 400;
-    font-size: min(2vw, 16pt);
+    font-size: max(2vw, 16pt);
 }
 
 .title h3 {
     font-weight: 300;
-    font-size: min(1.5vw, 12pt);
+    font-size: max(1.5vw, 12pt);
 }
 
 .title h4 {
     font-weight: 300;
-    font-size: min(1.5vw, 12pt);
+    font-size: max(1.5vw, 12pt);
 }
 
 .description{
+    display:flex;
+    flex-direction: column;
     background-color: white;
+    outline: 3px solid red;
     padding: 12px;
+    height:2000px;
 }
 
 .description h1{
     font-weight: 600;
-    font-size: 4vw;
+    font-size: max(5vw, 28px);
 }
 
 .description h2 {
     font-weight: 500;
-    font-size: 4vw;
+    font-size: max(4vw, 24px);
 }
 
 .description h3 {
@@ -71,9 +75,16 @@
     font-size: 4vw;
 }
 
-.description {
-    font-weight: 400;
-    font-size: 3vw;
+.description p{
+    margin-top: 12px;
+    font-weight: 300;
+    font-size: calc(12+1vw);
+}
+
+.description .files{
+    margin-top: 12px;
+    background-color: white;
+    height: 360px;
 }
 
 
