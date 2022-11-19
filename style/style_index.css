@@ -1,0 +1,139 @@
+
+
+/*Contents*/
+.content {
+    /* position: relative; */
+    background-color: white;
+    display: grid;
+    width: 100%;
+    height: calc(100vh - 260px);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1.5px;
+}
+
+.content *{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.content #about {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    overflow: hidden;
+    font-family: "Arita-buri-SemiBold";
+    text-align: center;
+    line-height: 40vw;
+    vertical-align: bottom;
+    font-size: 18vw;
+    font-stretch: condensed;
+}
+
+.content #about div{
+    padding-top: min(40vw, 40vh);
+    font-family: "Arita-buri-SemiBold";
+    text-align: center;
+    line-height: 40vw;
+    vertical-align: bottom;
+    font-size: 18vw;
+    font-stretch: condensed;
+}
+
+/* works */
+.content #main-content-works{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.content #main-content-works *{
+    outline: 0;
+    background-color: transparent;
+    width: 100%;
+}
+
+.content .main-content-title{
+    text-align: left;
+    font-family: "Arita-buri-SemiBold";
+    font-size: min(8vw, 240px);
+}
+
+.main-headline{
+    outline:0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 25% 40% 5% 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.content .main-headline *{
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    outline: 0;
+}
+
+#fancyMainSlogan{
+    font-weight: 700;
+    background: -webkit-linear-gradient(#fbcac9, #8ca6ce);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* projects */
+.content #main-content-projects {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.content #main-content-projects * {
+    outline: 0;
+    background-color: transparent;
+    width: 100%;
+}
+
+.content .main-headline-plain{
+    width:100%;
+    font-weight: 700;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 24px;
+    outline: 0ch;
+
+}
+
+/* content - responsive */
+@media(max-width: 600px) {
+    .content{
+        grid-template-columns: 100%;
+        grid-template-rows: 33.33% 33.33% 33.33%;
+    }
+    .content #about{
+        grid-row: 1/1;
+        line-height: 50vw;
+        font-size: min(8vw, 240px);
+    }
+    .content #main-content-works {
+        display: grid;
+        grid-template-rows: 2fr 2fr;
+        grid-template-columns: 1fr;
+    }
+    .content #main-content-projects {
+        display: grid;
+        grid-template-rows: 2fr 2fr;
+        grid-template-columns: 1fr;
+    }
+
+}
