@@ -1,0 +1,154 @@
+.content {
+    /* position: relative; */
+    background-color: green;
+    background-color: white;
+    width: 100%;
+    height: calc(100vh - 260px);
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+/* title bar */
+.title{
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    flex: 1 4;
+}
+.title *{
+    height: 80px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* year divider */
+.divider{
+    grid-column: 1/6;
+    display: flex;
+    flex-direction: row;
+}
+.divider * {
+    height: 50px;
+    background-color: white;
+
+}
+.year{
+    display: flex;
+    width: 70px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.slash {
+    flex: 1;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    font-size: 80px;
+    font-weight: 300;
+}
+
+.gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 3px;
+}
+
+.galleryElement{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.galleryElement *{
+    outline: 0;
+}
+
+.thumbnail{
+    outline: 3px solid red;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.galleryElement h1{
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 9px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.galleryElement h2 {
+    padding-left: 12px;
+        padding-right: 12px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.galleryElement h3 {
+    padding-left: 12px;
+    padding-right: 12px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.galleryElement h4 {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+@media(max-width: 600px){
+    .gallery{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(min-width: 600px) and (max-width: 800px) {
+.gallery {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3px;
+    }
+
+        .divider {
+            grid-column: 1/4;
+            display: flex;
+            flex-direction: row;
+        }
+}
+
+@media(min-width: 800px) and (max-width: 1200px) {
+    .gallery {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3px;
+    }
+
+    .divider {
+        grid-column: 1/5;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+a:hover{
+    background-color: transparent;
+    color: white;
+}
