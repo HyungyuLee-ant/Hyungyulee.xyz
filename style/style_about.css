@@ -145,6 +145,13 @@
     font-size: 12px;
     }
 
+    #intro h4 .light {
+        font-size: 12px;
+    }
+
+    #intro h5 {
+        font-size: 12px;
+    }
 
     #intro {
     height: auto;
