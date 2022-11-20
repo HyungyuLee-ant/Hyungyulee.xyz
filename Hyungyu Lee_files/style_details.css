@@ -101,13 +101,8 @@
         bottom: 124px;
     }
 
-    .content{
-        overflow: hidden;
-    }
-
     .description{
         outline: 3px solid red;
-        overflow: scroll;
     }
 }
 
