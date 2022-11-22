@@ -1,6 +1,9 @@
 var colorPalette = "#93a9d1"
 
 $(document).ready(function () {
+    if (sessionStorage.getItem("colorPalette")) {
+        colorPalette = sessionStorage.getItem("colorPalette")
+    }
     $("*").not(".colors").css('color', colorPalette)
     $(".content").not(".colors").css('background-color', colorPalette)
     $("*").not(".colors").css('outline-color', colorPalette)
@@ -12,8 +15,8 @@ $(document).ready(function () {
         $(".content").not(".colors").css('background-color', $(this).css("background-color"))
         $("*").not(".colors").css('outline-color', $(this).css("background-color"))
         $("*").not(".colors").css('border-color', $(this).css("background-color"))
-
         colorPalette = $(this).css("background-color")
+        sessionStorage.setItem("colorPalette",$(this).css("background-color"))
     })
 
     $(".works").mouseenter(function () {
