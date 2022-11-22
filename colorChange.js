@@ -6,7 +6,7 @@ $(document).ready(function () {
     $("*").not(".colors").css('outline-color', colorPalette)
     $("*").not(".colors").css('border-color', colorPalette)
 
-        $(".colors").click(function () {
+    $(".colors").click(function () {
         //alert("searching for new color");
         $("*").not(".colors").css('color', $(this).css("background-color"))
         $(".content").not(".colors").css('background-color', $(this).css("background-color"))
@@ -36,12 +36,6 @@ $(document).ready(function () {
         $(this).css('color', colorPalette)
         $(this).children().css('color', colorPalette)
         $(this).children().children().css('color', colorPalette)
-    })
-
-
-
-    $(".footer").mouseenter(function () {
-        alert("new color?");
     })
 
 })

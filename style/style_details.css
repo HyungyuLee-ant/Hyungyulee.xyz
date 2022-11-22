@@ -26,7 +26,7 @@
 }
 
 .title{
-    outline: 3px solid red;
+    outline: 3px solid #93a9d1;
     background-color: white;
     padding: 12px;
 }
@@ -56,7 +56,7 @@
     flex-direction: column;
     overflow: scroll;
     background-color: white;
-    outline: 3px solid red;
+    outline: 3px solid #93a9d1;
     padding: 12px;
 }
 
@@ -106,7 +106,7 @@
     }
 
     .description{
-        outline: 3px solid red;
+        outline: 3px solid #93a9d1;
         overflow: scroll;
     }
 }
