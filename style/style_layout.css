@@ -73,6 +73,54 @@ body * {
     grid-template-rows: 100%;
 }
 
+/* color picker */
+.colorpicker{
+    outline: 0;
+    display:flex;
+    flex-direction: row-reverse;
+    gap: 3px;
+    right: 29px;
+    top:7px;
+    width: 50vw;
+    margin: 0;
+    padding: 0;
+}
+
+.colors {
+    outline: 0;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    color: white;
+    overflow: hidden;
+}
+
+#color1{
+    background-color: #93a9d1;
+}
+
+#color2{
+    background-color: palevioletred;
+}
+
+#color3 {
+    background-color: rgb(36, 173, 36);
+}
+
+#color4 {
+    background-color: #555;
+}
+
+@media(max-width: 600px){
+    .colorpicker {
+        right: 17px;
+        top: 2px;
+        display: none;
+    }
+}
+
+
+
 /* elements in header */
 .header * {
     outline: 0px;
@@ -145,7 +193,6 @@ body * {
 
 /*footer - responsive*/
 @media(max-width: 600px) {
-
     .container{
         padding: 12px;
     }

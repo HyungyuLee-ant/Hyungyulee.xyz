@@ -1,3 +1,5 @@
+//not used
+
 $(document).ready(function () {
     // alert('yes')
     $('.content').scroll(function () {

@@ -1,10 +1,20 @@
 var colorPalette = "#93a9d1"
 
 $(document).ready(function () {
-    $("*").css('color',colorPalette)
-    $(".content").css('background-color', colorPalette)
-    $("*").css('outline-color', colorPalette)
-    $("*").css('border-color', colorPalette)
+    $("*").not(".colors").css('color', colorPalette)
+    $(".content").not(".colors").css('background-color', colorPalette)
+    $("*").not(".colors").css('outline-color', colorPalette)
+    $("*").not(".colors").css('border-color', colorPalette)
+
+        $(".colors").click(function () {
+        //alert("searching for new color");
+        $("*").not(".colors").css('color', $(this).css("background-color"))
+        $(".content").not(".colors").css('background-color', $(this).css("background-color"))
+        $("*").not(".colors").css('outline-color', $(this).css("background-color"))
+        $("*").not(".colors").css('border-color', $(this).css("background-color"))
+
+        colorPalette = $(this).css("background-color")
+    })
 
     $(".works").mouseenter(function () {
         $(this).parent().css('background', 'transparent')
@@ -26,6 +36,12 @@ $(document).ready(function () {
         $(this).css('color', colorPalette)
         $(this).children().css('color', colorPalette)
         $(this).children().children().css('color', colorPalette)
+    })
+
+
+
+    $(".footer").mouseenter(function () {
+        alert("new color?");
     })
 
 })

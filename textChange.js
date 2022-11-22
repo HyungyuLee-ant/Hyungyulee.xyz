@@ -2,7 +2,7 @@
         var length = 2;
 
         /*store the variables here*/
-        var texts=["hello", "I am happy"]
+        var texts=["Movie that Plays<br>Based on Choices", "I am happy"]
         var emojis=["🐻", "💛"]
         var gradients = ['linear-gradient(to right, #fbcac9, #8ca6ce)', 'linear-gradient(to right, #ff0000, #00ffff']
 
