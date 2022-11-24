@@ -74,12 +74,18 @@
 #intro h4{
     line-height: 150%;
     font-size: min(3vw, 16px)
+    
 }
+
+
 
 #intro h4 span{
     font-weight:600;
     line-height: 150%;
     font-size: min(3vw, 16px);
+    font-family: 'Pretendard', "Times New Roman";
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
 }
 
 #intro h4 .light {

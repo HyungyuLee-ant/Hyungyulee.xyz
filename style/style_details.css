@@ -1,5 +1,5 @@
 *{
- box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .content {
@@ -118,6 +118,7 @@
     .content{
         display: flex;
         flex-direction: column;
+        height: calc(78vh - 36px);
     }
 
     h1{

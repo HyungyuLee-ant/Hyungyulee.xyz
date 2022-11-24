@@ -29,7 +29,11 @@ a {
     left: calc(100%-90px);
 }
 /*fonts and initialization*/
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+/* @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css); */
+
+/* @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css"); */
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
 
 @font-face {
     font-family: 'Arita-buri-SemiBold';
@@ -38,9 +42,8 @@ a {
     font-style: normal;
 }
 
-
 body * {
-    font-family: 'SpoqaHanSansNeo', "Apple SD Gothic Neo", 'sans-serif';
+    font-family: 'Pretendard', 'Apple SD Gothic', 'serif';
     font-weight: 400;
     font-size: 14pt;
     box-sizing: border-box;
@@ -119,8 +122,6 @@ body * {
     }
 }
 
-
-
 /* elements in header */
 .header * {
     outline: 0px;
@@ -184,7 +185,7 @@ body * {
 }
 
 .footer * {
-    font-size: 12pt;
+    font-size: min(2vw, 12pt);
     outline: 0;
     display: grid;
     justify-content: center;

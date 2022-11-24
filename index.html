@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyungyu Lee</title>
+
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
     <link rel="stylesheet" type="text/css" href="./style/style_layout.css" />
     <link rel="stylesheet" type="text/css" href="./style/style_index.css" />
 
-    <script src="../jquery-3.6.1.min.js"></script>
-    <script src="../jquery.color-2.1.2.js"></script>
-    <script src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
-    <script type="text/javascript" src="../colorChange.js"></script>    
-    <script type="text/javascript" src="textChange.js"></script>
+    <script src="/scripts/jquery-3.6.1.min.js"></script>
+    <script src="/scripts/jquery.color-2.1.2.js"></script>
+    <script type="module" src="/scripts/colorChange.js"></script>
+
+    <!-- textchange at main only -->
+    <script type="text/javascript" src="./scripts/textChange.js"></script>
 </head>
 <body>
 
@@ -34,10 +38,10 @@
         <a href="/about.html" class = "contentText" id = "about">About</a>
 
         <a href="/works.html" class = "contentText"  id="main-content-works">
-            <div class="main-content-title" >Works</div>
+            <div class="main-content-title">Works</div>
             <div class = "main-headline">
                 <div id="mh1">I make {</div>
-                <div id = "fancyMainSlogan">non-linear movie<br>based on selections</div>
+                <div id = "fancyMainSlogan">non-linear movie<br>based on selections<span id="emoji">❤️</span></div>
                 <div id="fancyEmoji">👀</div>
                 <div id="mh2">} with codes</div>
             </div>
