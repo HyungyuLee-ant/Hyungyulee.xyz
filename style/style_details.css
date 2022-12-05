@@ -86,6 +86,10 @@
     margin-bottom: 12px;
 }
 
+.files *{
+    overflow: auto;
+}
+
 .description h5{
     margin-top: 12px;
     margin-bottom: 12px;
@@ -111,7 +115,7 @@
     }
 }
 
-@media(max-width: 600px) {
+@media(max-width: 630px) {
     .description{
         overflow: visible;
     }

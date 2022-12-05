@@ -1,4 +1,8 @@
-let colorPalette = "#93a9d1" //default color
+var globalVariable={
+    colorPalette: "#93a9d1"//default color
+};
+
+var colorPalette = globalVariable.colorPalette;
 
 $(document).ready(function () {
     if (sessionStorage.getItem("colorPalette")) { //if this is null, we will not get color values from session storage, which does not exist.
@@ -22,6 +26,7 @@ $(document).ready(function () {
         //save the color to variable of this session
         sessionStorage.setItem("colorPalette", $(this).css("background-color"))
         colorPalette = $(this).css("background-color")
+        globalVariable.colorPalette = colorPalette;
         // alert(colorPalette)
     })
 
@@ -52,5 +57,6 @@ $(document).ready(function () {
 });
 
 export function cp() {
+    print("exported cp:", colorPalette);
     return colorPalette
 }

@@ -13,6 +13,7 @@
 }
 
 .content *{
+    overflow: hidden;
     background-color: white;
     width: 100%;
     height: 100%;
@@ -45,29 +46,36 @@
 
 /* works */
 .content #main-content-works{
+    grid-row-start: 1;
+    grid-row-end: 3;
     background-color: white;
-    display: grid;
-    grid-template-rows: 1fr auto;
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     padding-bottom: 24px;
 }
 
 .content #main-content-works *{
     width: 100%;
+    height: 100%;
 }
 
 .content .main-content-title{
     text-align: left;
     font-family: "Arita-buri-SemiBold";
-    height: 100%;
-    font-size: 8vh;
+    text-align: center;
+    line-height: 40vw;
+    vertical-align: bottom;
+    font-size: 18vw;
+    font-stretch: condensed;
 }
 
 .main-headline{
     outline:0;
     display: grid;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
     grid-template-columns: 25% 40% 5% 30%;
     padding-left: 10px;
     padding-right: 10px;
@@ -79,7 +87,6 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-
     outline: 0;
 }
 
@@ -104,36 +111,15 @@
 }
 
 /* projects */
-.content #main-content-projects {
-    display: grid;
-    grid-template-rows: 3fr 1fr;
-    grid-template-columns: 1fr;
-}
-
-.content #main-content-projects * {
-    outline: 0;
-    background-color: transparent;
-    width: 100%;
-}
-
-.content .main-headline-plain{
-    width:100%;
-    font-weight: 700;
-    display:flex;
-    justify-content: left;
-    align-items: center;
-    padding-left: 24px;
-    outline: 0ch;
-
-}
 
 /* content - responsive */
 @media(max-width: 600px) {
     .content{
         height: calc(73vh);
         overflow: hidden;
-        grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns:100%;
+        grid-template-rows: 1fr 1fr;
+
     }
 
     .content *{
@@ -152,22 +138,33 @@
         font-size: min(8vw, 240px);
         height:100%;
     }
+
+    .content .main-content-title {
+        line-height: 10vw;
+        font-size: min(8vw, 240px);
+        height: 100%;
+    }
+
     .content #main-content-works {
+        grid-row: 2/3;
         padding: 24px;
         display: grid;
         grid-template-rows: 2fr 2fr;
         grid-template-columns: 1fr;
         overflow: hidden;
+        
+        font-size: min(8vw, 240px);
     }
 
     .content #main-content-works * {
+        
         font-size: 15px;
     }
 
     .content #main-content-projects {
         padding: 24px;
         display: grid;
-        grid-template-rows: 2fr 2fr;
+        grid-template-rows: 2fr;
         grid-template-columns: 1fr;
     }
 
