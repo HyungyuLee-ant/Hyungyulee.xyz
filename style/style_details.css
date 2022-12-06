@@ -81,6 +81,11 @@
     font-size: calc(12+1vw);
 }
 
+.description ol{
+    padding: 24px;
+        font-weight: 300;
+}
+
 .description .files{
     margin-top: 12px;
     margin-bottom: 12px;
