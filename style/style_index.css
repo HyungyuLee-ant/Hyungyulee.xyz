@@ -49,9 +49,9 @@
     grid-row-start: 1;
     grid-row-end: 3;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    grid-template-rows: 1fr;
+
+    display: grid;
+    grid-template-rows: 3fr 1fr;
     grid-template-columns: 1fr;
     padding-bottom: 24px;
 }
@@ -69,6 +69,7 @@
     vertical-align: bottom;
     font-size: 18vw;
     font-stretch: condensed;
+    overflow: auto;
 }
 
 .main-headline{
