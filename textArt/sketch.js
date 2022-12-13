@@ -46,19 +46,19 @@ class Typography{
           stroke(red(colorPalette), green(colorPalette), blue(colorPalette), 255/79*(i+1));
         }
         strokeWeight(6 + 6 *(79-i));
+        textFont(font);
         text(this.content, this.xPos, this.yPos);
       }
       strokeWeight(6);
     } 
-    }  
+  }  
+  
   rawShow() {
     stroke(colorPalette);
       fill(255);
       text(this.content, this.xPos, this.yPos);
     }
   }
-
-
 
 let texts = [];
 
