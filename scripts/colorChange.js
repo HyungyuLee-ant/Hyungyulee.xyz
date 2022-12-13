@@ -15,19 +15,43 @@ $(document).ready(function () {
     $("*").not(".colors").css('outline-color', colorPalette)
     $("*").not(".colors").css('border-color', colorPalette)
 
+        //setting favicon
+        if (String(colorPalette) == "rgb(147, 169, 209)") {
+            $("#favicon").attr('href', '/icons/favicon1.ico')
+        } else if (String(colorPalette) == "rgb(219, 112, 147)"){
+            $("#favicon").attr('href', '/icons/favicon2.ico')
+        } else if (String(colorPalette) == "rgb(36, 173, 36)"){
+            $("#favicon").attr('href', '/icons/favicon3.ico')
+        } else if (String(colorPalette) == "rgb(85, 85, 85)"){
+            $("#favicon").attr('href', '/icons/favicon4.ico')
+        }
+
     //if color palette is clicked
     $(".colors").click(function () {
+        //save the color to variable of this session
+        sessionStorage.setItem("colorPalette", $(this).css("background-color"))
+        colorPalette = $(this).css("background-color")
+        globalVariable.colorPalette = colorPalette;
+
         //apply color to every element except color palette
         //get color by clicked element's $(this).css("background-color")
         $("*").not(".colors").css('color', $(this).css("background-color"))
         $(".content").not(".colors").css('background-color', $(this).css("background-color"))
         $("*").not(".colors").css('outline-color', $(this).css("background-color"))
         $("*").not(".colors").css('border-color', $(this).css("background-color"))
-        //save the color to variable of this session
-        sessionStorage.setItem("colorPalette", $(this).css("background-color"))
-        colorPalette = $(this).css("background-color")
-        globalVariable.colorPalette = colorPalette;
-        // alert(colorPalette)
+
+        // alert(String(colorPalette))
+
+        //changing favicon
+        if (String(colorPalette) == "rgb(147, 169, 209)") {
+            $("#favicon").attr('href', '/icons/favicon1.ico')
+        } else if (String(colorPalette) == "rgb(219, 112, 147)"){
+            $("#favicon").attr('href', '/icons/favicon2.ico')
+        } else if (String(colorPalette) == "rgb(36, 173, 36)"){
+            $("#favicon").attr('href', '/icons/favicon3.ico')
+        } else if (String(colorPalette) == "rgb(85, 85, 85)"){
+            $("#favicon").attr('href', '/icons/favicon4.ico')
+        }
     })
 
     //for main page
