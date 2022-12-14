@@ -1,6 +1,5 @@
 .content {
     /* position: relative; */
-    background-color: #93a9d1;
     background-color: white;
     width: 100%;
     height: calc(100vh - 240px);
@@ -33,7 +32,7 @@
 }
 
 .title div:nth-child(1){
-    outline: 3px solid #93a9d1;
+    outline: 3px solid white;
 }
 
 /* year divider */
@@ -85,7 +84,7 @@
 }
 
 .thumbnail{
-    outline: 3px solid #93a9d1;
+    outline: 3px solid white;
     width: 100%;
     aspect-ratio: 1/1;
 }
