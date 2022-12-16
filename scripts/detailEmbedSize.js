@@ -1,6 +1,12 @@
 
-var widthDesired = $(".description").width() - 48;
+var widthDesired = $(".description").width();
     //for details section
-    $('iframe').css('width',widthDesired);
-$('iframe').css('height', widthDesired / 1.4);
+$('iframe').css('width',widthDesired);
+$('iframe').css('height', widthDesired / 16 * 9);
     
+window.onresize = function(event){
+var widthDesired = $(".description").width();
+    //for details section
+$('iframe').css('width',widthDesired);
+$('iframe').css('height', widthDesired / 16 * 9);
+}
