@@ -90,7 +90,10 @@ function setup() {
 
 function draw() {
   //initialization
-  // background(255);
+  //loading font delay
+  if (frameCount < 60) {
+    background(255);
+  }
   stroke(color(colorPalette));
   strokeWeight(6);
   fill(255);

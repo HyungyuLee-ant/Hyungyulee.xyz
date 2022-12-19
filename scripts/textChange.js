@@ -1,5 +1,5 @@
         var count = 0;
-        var length = 10;
+        var length = 11;
 
         /*store the variables here*/
         var texts=[
@@ -12,9 +12,10 @@
             "Non-linear Screening Film",
             "Sentimental Mouse Interactive Art",
             "A drawing journal-based film about COVID patients and their stigma",
-            "An interactive novel about COVID patients and cyber bullying towards them"
+            "An interactive novel about COVID patients and cyber bullying towards them",
+            "Plogging(줍깅) Game Using Oceaninc Waste Public Data and Wearable Device's Motion Sensor Values"
             ]
-        var emojis=["🎓", "🖤", "🛞", "📸", "⏳", "🤳🏻", "🎬", "🌟", "🎪", "😷", ]
+        var emojis=["🎓", "🖤", "🛞", "📸", "⏳", "🤳🏻", "🎬", "🌟", "🎪", "😷", "🏃‍♂️"]
         var gradients = [
             'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(71,71,209,1) 35%, rgba(0,212,255,1) 100%)',
             'linear-gradient(to right, #ff0000, #00ffff',
@@ -25,7 +26,8 @@
             'linear-gradient(to right, rgb(255, 174, 0), rgb(166, 84, 136))',
             'linear-gradient(347deg, rgba(10,145,212,0.2), rgba(38,25,168,0.7))',
             'linear-gradient(331deg, rgba(97,244,201,0.7), rgba(8,16,80,0.8))',
-            'linear-gradient(97deg, rgba(177,85,234,0.3), rgba(180,92,140,1))'
+            'linear-gradient(97deg, rgba(177,85,234,0.3), rgba(180,92,140,1))',
+            'linear-gradient(147deg, rgba(8,222,70,0.2), rgba(35,7,226,0.9));'
             ]
 
         $(document).ready(function(){
